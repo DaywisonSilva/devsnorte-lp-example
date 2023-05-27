@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+gsap html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #111;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  transform: translateY(0%);
+}
+
+html.is-animating .transition-fade {
+  transform: translateY(-100%);
+}
+
+html.is-leaving .transition-fade {
+  transform: translateY(-100%);
+}
